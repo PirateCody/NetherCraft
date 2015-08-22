@@ -1,6 +1,7 @@
 package com.piratecody.nethercraft;
 
 
+import com.piratecody.nethercraft.init.NCBlocks;
 import com.piratecody.nethercraft.proxies.CommonProxy;
 import com.piratecody.nethercraft.Reference;
 
@@ -27,7 +28,7 @@ public class Nethercraft {
 	public void preInit(FMLPreInitializationEvent event)
 	{
 		
-		
+		NCBlocks.registerBlocks();
 
 	}
 
