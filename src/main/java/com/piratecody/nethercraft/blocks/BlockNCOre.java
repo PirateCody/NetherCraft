@@ -1,6 +1,7 @@
 package com.piratecody.nethercraft.blocks;
 
 import com.piratecody.nethercraft.Reference;
+import com.piratecody.nethercraft.init.NCTabs;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
@@ -30,6 +31,7 @@ public class BlockNCOre extends Block{
 		this.setLightLevel(lightLevel);
 		this.setHarvestLevel(toolClass, level);
 		this.setBlockTextureName(Reference.MODID + ":" + name);
+		this.setCreativeTab(NCTabs.tabNC);
 		
 		
 	}
