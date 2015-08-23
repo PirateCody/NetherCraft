@@ -45,6 +45,7 @@ Temporary Items
 # Mod stuff
 /bin/
 
+/crash-reports
 .project
 .classpath
 /build
