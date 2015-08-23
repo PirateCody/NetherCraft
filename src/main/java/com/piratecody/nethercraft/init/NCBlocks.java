@@ -14,7 +14,7 @@ public class NCBlocks {
 	public static Block obsidianOre = new BlockNCOre("ObsidianOre", Material.rock, 5.0F, 20.0F, 0F, "pickaxe", 3);
 	
 	public static Block corruptIronBlock = new BlockNC("CorruptIronBlock", Material.iron, 3.0F, 7.0F, 0F, "pickaxe", 2);
-	public static Block corruptDiamondBlock = new BlockNC("CorruptIronBlock", Material.coral, 4.0F, 7.1F, 0F, "pickaxe", 2);
+	public static Block corruptDiamondBlock = new BlockNC("CorruptDiamondBlock", Material.coral, 4.0F, 7.1F, 0F, "pickaxe", 2);
 	
 	
 	public static void registerBlocks(){
