@@ -8,7 +8,6 @@ import net.minecraft.world.chunk.IChunkProvider;
 import net.minecraft.world.gen.feature.WorldGenMinable;
 import cpw.mods.fml.common.IWorldGenerator;
 
-import com.piratecody.nethercraft.blocks.*;
 import com.piratecody.nethercraft.init.NCBlocks;
 
 public class NCWorldGeneration implements IWorldGenerator{
@@ -34,7 +33,7 @@ public class NCWorldGeneration implements IWorldGenerator{
 
 		private void generateNether(World world, Random random, int x, int z)
 		{
-			addOreSpawn(NCBlocks.corruptIronOre, world, random, x, z, 16, 16, 3 + random.nextInt(3), 9, 0, 80);
+			addNetherOreSpawn(NCBlocks.corruptIronOre, world, random, x, z, 16, 16, 3 + random.nextInt(3), 100, 0, 80);
 		}
 
 		private void generateEnd(World world, Random random, int x, int z)
@@ -44,15 +43,17 @@ public class NCWorldGeneration implements IWorldGenerator{
 		
 		
 		
-		private void addOreSpawn(Block block, World world, Random random, int blockXPos, int blockZPos, int maxX, int maxZ, int maxVeinSize, int chanceToSpawn, int minY, int maxY)
+		private void addNetherOreSpawn(Block block, World world, Random random, int blockXPos, int blockZPos, int maxX, int maxZ, int maxVeinSize, int chanceToSpawn, int minY, int maxY)
 		{
 			for (int i = 0; i < chanceToSpawn; i++)
 			{
 				int posX = blockXPos + random.nextInt(maxX);
 				int posY = minY + random.nextInt(maxY - minY);
 				int posZ = blockZPos + random.nextInt(maxZ);
-				new WorldGenMinable(block, maxVeinSize).generate(world, random, posX, posY, posZ);
+				new NetherMineable(block, maxVeinSize).generate(world, random, posX, posY, posZ);
 			}
 		}
+		
+		
 
 }
