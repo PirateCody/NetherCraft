@@ -32,8 +32,11 @@ public class BlockNCOre extends Block{
 		this.setHarvestLevel(toolClass, level);
 		this.setBlockTextureName(Reference.MODID + ":" + name);
 		this.setCreativeTab(NCTabs.tabNC);
-		
-		
+	
+	if(name == "CorruptIronOre"){
+		this.setHardness(10F);
 	}
+
+}
 
 }
