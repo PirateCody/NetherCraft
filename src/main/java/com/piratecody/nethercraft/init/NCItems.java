@@ -16,6 +16,7 @@ public class NCItems {
 		
 		RegisterHelper.registerItem(gemCorruptDiamond);
 		RegisterHelper.registerItem(ingotCorruptIron);
+		RegisterHelper.registerItem(dustObsidian);
 		
 	}
 
