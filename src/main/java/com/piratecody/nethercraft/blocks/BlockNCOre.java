@@ -1,10 +1,15 @@
 package com.piratecody.nethercraft.blocks;
 
+import java.util.Random;
+
 import com.piratecody.nethercraft.Reference;
+import com.piratecody.nethercraft.init.NCBlocks;
+import com.piratecody.nethercraft.init.NCItems;
 import com.piratecody.nethercraft.init.NCTabs;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
+import net.minecraft.item.Item;
 
 public class BlockNCOre extends Block{
 	
@@ -33,10 +38,21 @@ public class BlockNCOre extends Block{
 		this.setBlockTextureName(Reference.MODID + ":" + name);
 		this.setCreativeTab(NCTabs.tabNC);
 	
-	if(name == "CorruptIronOre"){
-		this.setHardness(10F);
 	}
+	
+	public Item getItemDropped(int p_149650_1_, Random p_149650_2_, int p_149650_3_)
+    {
+        return this == NCBlocks.oreCorruptDiamond ? NCItems.gemCorruptDiamond : Item.getItemFromBlock(this);
+    }
 
+	
 }
 
-}
+	
+
+		
+	
+
+
+
+

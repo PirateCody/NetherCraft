@@ -10,6 +10,7 @@ import cpw.mods.fml.common.IWorldGenerator;
 
 import com.piratecody.nethercraft.init.NCBlocks;
 
+@SuppressWarnings("unused")
 public class NCWorldGeneration implements IWorldGenerator{
 	
 	public void generate(Random random, int chunkX, int chunkZ, World world, IChunkProvider chunkGenerator, IChunkProvider chunkProvider)
@@ -33,7 +34,9 @@ public class NCWorldGeneration implements IWorldGenerator{
 
 		private void generateNether(World world, Random random, int x, int z)
 		{
-			addNetherOreSpawn(NCBlocks.corruptIronOre, world, random, x, z, 16, 16, 3 + random.nextInt(3), 100, 0, 80);
+			addNetherOreSpawn(NCBlocks.oreCorruptIron, world, random, x, z, 16, 16, 1 + random.nextInt(3), 80, 0, 120);
+			addNetherOreSpawn(NCBlocks.oreCorruptDiamond, world, random, x, z, 16, 16, 1 + random.nextInt(2), 75, 0, 120);
+			addNetherOreSpawn(NCBlocks.oreObsidian, world, random, x, z, 16, 16, 1, 50, 50, 120);
 		}
 
 		private void generateEnd(World world, Random random, int x, int z)
