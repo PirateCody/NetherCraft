@@ -1,6 +1,10 @@
 package com.piratecody.nethercraft;
 
 
+import net.minecraft.world.biome.BiomeGenBase;
+import net.minecraftforge.common.BiomeManager;
+
+import com.piratecody.nethercraft.generation.BiomeGenNether;
 import com.piratecody.nethercraft.generation.NCWorldGeneration;
 import com.piratecody.nethercraft.init.NCBlocks;
 import com.piratecody.nethercraft.proxies.CommonProxy;
@@ -25,6 +29,7 @@ public class Nethercraft {
 	public static Nethercraft instance;
 	
 	NCWorldGeneration eventWorldGen = new NCWorldGeneration();
+	public static BiomeGenBase NetherBiome = new BiomeGenNether(52).setBiomeName("Nether");
 	
 	//inits
 	@Mod.EventHandler
@@ -33,6 +38,7 @@ public class Nethercraft {
 		
 		NCBlocks.registerBlocks();
 		GameRegistry.registerWorldGenerator(eventWorldGen, 0);
+		BiomeManager.addSpawnBiome(NetherBiome);
 
 	}
 
