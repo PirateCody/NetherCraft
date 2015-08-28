@@ -23,6 +23,7 @@ public class BiomeGenNether extends BiomeGenBase{
 	this.topBlock = Blocks.netherrack;
 	this.fillerBlock = Blocks.netherrack;
 	this.setBiomeName("Tutorial");
+	this.setColor(16711680);
 	
 	this.spawnableMonsterList.add(new BiomeGenBase.SpawnListEntry(EntityGhast.class, 50, 4, 4));
     this.spawnableMonsterList.add(new BiomeGenBase.SpawnListEntry(EntityPigZombie.class, 100, 4, 4));
@@ -32,5 +33,8 @@ public class BiomeGenNether extends BiomeGenBase{
 	/** this changes the water colour, its set to red now but ggole the java colours **/
 	this.waterColorMultiplier = 0xE42D17;
 	}
+	
+	
+	 
 
 }
