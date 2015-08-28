@@ -3,6 +3,7 @@ package com.piratecody.nethercraft.generation;
 import java.util.Random;
 
 import net.minecraft.block.Block;
+import net.minecraft.init.Blocks;
 import net.minecraft.world.World;
 import net.minecraft.world.chunk.IChunkProvider;
 import net.minecraft.world.gen.feature.WorldGenMinable;
@@ -34,9 +35,9 @@ public class NCWorldGeneration implements IWorldGenerator{
 
 		private void generateNether(World world, Random random, int x, int z)
 		{
-			addNetherOreSpawn(NCBlocks.oreCorruptIron, world, random, x, z, 16, 16, 1 + random.nextInt(3), 80, 0, 120);
-			addNetherOreSpawn(NCBlocks.oreCorruptDiamond, world, random, x, z, 16, 16, 1 + random.nextInt(2), 75, 0, 120);
-			addNetherOreSpawn(NCBlocks.oreObsidian, world, random, x, z, 16, 16, 1, 50, 50, 120);
+			addOreSpawn(NCBlocks.oreCorruptIron, world, random, x, z, 16, 16, 1 + random.nextInt(3), 80, 0, 120, Blocks.netherrack);
+			addOreSpawn(NCBlocks.oreCorruptDiamond, world, random, x, z, 16, 16, 1 + random.nextInt(2), 75, 0, 120, Blocks.netherrack);
+			addOreSpawn(NCBlocks.oreObsidian, world, random, x, z, 16, 16, 1, 50, 50, 120, Blocks.netherrack);
 		}
 
 		private void generateEnd(World world, Random random, int x, int z)
@@ -46,14 +47,14 @@ public class NCWorldGeneration implements IWorldGenerator{
 		
 		
 		
-		private void addNetherOreSpawn(Block block, World world, Random random, int blockXPos, int blockZPos, int maxX, int maxZ, int maxVeinSize, int chanceToSpawn, int minY, int maxY)
+		private void addOreSpawn(Block block, World world, Random random, int blockXPos, int blockZPos, int maxX, int maxZ, int maxVeinSize, int chanceToSpawn, int minY, int maxY, Block target)
 		{
 			for (int i = 0; i < chanceToSpawn; i++)
 			{
 				int posX = blockXPos + random.nextInt(maxX);
 				int posY = minY + random.nextInt(maxY - minY);
 				int posZ = blockZPos + random.nextInt(maxZ);
-				new NetherMineable(block, maxVeinSize).generate(world, random, posX, posY, posZ);
+				new NetherMineable(block, maxVeinSize, target).generate(world, random, posX, posY, posZ);
 			}
 		}
 		
