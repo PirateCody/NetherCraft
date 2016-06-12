@@ -1,8 +1,5 @@
 package com.piratecody.nethercraft.init;
 
-import java.util.ArrayList;
-
-import com.piratecody.nethercraft.helpers.RegisterHelper;
 import com.piratecody.nethercraft.items.AxeNC;
 import com.piratecody.nethercraft.items.NCArmor;
 import com.piratecody.nethercraft.items.PickaxeNC;
