@@ -9,9 +9,9 @@ import com.piratecody.nethercraft.generation.NCWorldGeneration;
 import com.piratecody.nethercraft.init.NCArmory;
 import com.piratecody.nethercraft.init.NCBlocks;
 import com.piratecody.nethercraft.init.NCItems;
-import com.piratecody.nethercraft.items.ItemNC;
 import com.piratecody.nethercraft.proxies.CommonProxy;
 import com.piratecody.nethercraft.Reference;
+import com.piratecody.nethercraft.crafting.Recipes;
 
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.SidedProxy;
@@ -52,7 +52,7 @@ public class Nethercraft {
 	public void init(FMLInitializationEvent event)
 	{
 		
-		
+		Recipes.registerRecipes();
 
 	}
 
