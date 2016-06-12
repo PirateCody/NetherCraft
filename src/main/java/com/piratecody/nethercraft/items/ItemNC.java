@@ -1,7 +1,9 @@
 package com.piratecody.nethercraft.items;
 
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.world.World;
 
 import com.piratecody.nethercraft.Reference;
 import com.piratecody.nethercraft.init.NCTabs;
@@ -23,6 +25,13 @@ public class ItemNC extends Item{
     {
         return 1;
     }
+	
+	@Override
+	public ItemStack onItemRightClick(ItemStack p_77659_1_, World world, EntityPlayer player)
+	{
+		return p_77659_1_ ;
+		
+	}
 	
 	
 	
