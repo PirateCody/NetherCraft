@@ -1,5 +1,6 @@
 package com.piratecody.nethercraft.init;
 
+import com.piratecody.nethercraft.helpers.RegisterHelper;
 import com.piratecody.nethercraft.items.AxeNC;
 import com.piratecody.nethercraft.items.NCArmor;
 import com.piratecody.nethercraft.items.PickaxeNC;
@@ -54,22 +55,33 @@ public class NCArmory {
 	public static Item swordObsidian = new SwordNC(OBSIDIAN, "ObsidianSword");
 	
 	//Pickaxe
-	public static Item pickaxeCorruptIron = new PickaxeNC(CORRUPT_IRON, "CorruptIronSword");
-	public static Item pickaxeCorruptDiamond = new PickaxeNC(CORRUPT_DIAMOND, "CorruptDiamondSword");
-	public static Item pickaxeObsidian = new PickaxeNC(OBSIDIAN, "ObsidianSword");
+	public static Item pickaxeCorruptIron = new PickaxeNC(CORRUPT_IRON, "CorruptIronPick");
+	public static Item pickaxeCorruptDiamond = new PickaxeNC(CORRUPT_DIAMOND, "CorruptDiamondPick");
+	public static Item pickaxeObsidian = new PickaxeNC(OBSIDIAN, "ObsidianPick");
 	
 	//Axe
-	public static Item axeCorruptIron = new AxeNC(CORRUPT_IRON, "CorruptIronSword");
-	public static Item axeCorruptDiamond = new AxeNC(CORRUPT_DIAMOND, "CorruptDiamondSword");
-	public static Item axeObsidian = new AxeNC(OBSIDIAN, "ObsidianSword");
+	public static Item axeCorruptIron = new AxeNC(CORRUPT_IRON, "CorruptIronAxe");
+	public static Item axeCorruptDiamond = new AxeNC(CORRUPT_DIAMOND, "CorruptDiamondAxe");
+	public static Item axeObsidian = new AxeNC(OBSIDIAN, "ObsidianAxe");
 	
 	//Spade
-	public static Item spadeCorruptIron = new SpadeNC(CORRUPT_IRON, "CorruptIronSword");
-	public static Item spadeCorruptDiamond = new SpadeNC(CORRUPT_DIAMOND, "CorruptDiamondSword");
-	public static Item spadeObsidian = new SpadeNC(OBSIDIAN, "ObsidianSword");
+	public static Item spadeCorruptIron = new SpadeNC(CORRUPT_IRON, "CorruptIronShovel");
+	public static Item spadeCorruptDiamond = new SpadeNC(CORRUPT_DIAMOND, "CorruptDiamondShovel");
+	public static Item spadeObsidian = new SpadeNC(OBSIDIAN, "ObsidianShovel");
 	
 	public static void registerArmory()
 	{
+		
+		RegisterHelper.registerItem(axeCorruptDiamond);
+		RegisterHelper.registerItem(swordCorruptDiamond);
+		RegisterHelper.registerItem(pickaxeCorruptDiamond);
+		RegisterHelper.registerItem(spadeCorruptDiamond);
+		
+		RegisterHelper.registerItem(axeCorruptIron);
+		RegisterHelper.registerItem(swordCorruptIron);
+		RegisterHelper.registerItem(pickaxeCorruptIron);
+		RegisterHelper.registerItem(spadeCorruptIron);
+
 		
 	}
 		
