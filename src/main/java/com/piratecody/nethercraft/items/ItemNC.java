@@ -1,12 +1,15 @@
 package com.piratecody.nethercraft.items;
 
+import com.piratecody.nethercraft.Reference;
+import com.piratecody.nethercraft.init.NCTabs;
+
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
+import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
-
-import com.piratecody.nethercraft.Reference;
-import com.piratecody.nethercraft.init.NCTabs;
 
 public class ItemNC extends Item{
 	
@@ -25,6 +28,14 @@ public class ItemNC extends Item{
     {
         return 1;
     }
+	
+	@Override
+	@SideOnly(Side.CLIENT)
+	public void registerIcons(IIconRegister par1IconRegister)
+	{
+		this.itemIcon = par1IconRegister.registerIcon(Reference.MODID + ":" + getUnlocalizedName().substring(5));
+	}
+
 	
 	@Override
 	public ItemStack onItemRightClick(ItemStack p_77659_1_, World world, EntityPlayer player)

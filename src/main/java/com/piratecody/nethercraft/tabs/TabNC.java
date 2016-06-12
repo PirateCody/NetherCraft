@@ -1,5 +1,7 @@
 package com.piratecody.nethercraft.tabs;
 
+import com.piratecody.nethercraft.init.NCItems;
+
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
@@ -17,7 +19,7 @@ public class TabNC extends CreativeTabs {
 	public Item getTabIconItem() {
 		
 		if(this.name == "tabNC"){
-			return Items.boat;
+			return NCItems.gemCorruptDiamond;
 		}
 		return null;
 	}
