@@ -9,6 +9,8 @@ import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemSword;
+import net.minecraft.potion.Potion;
+import net.minecraft.potion.PotionEffect;
 
 public class SwordNC extends ItemSword {
 
@@ -34,8 +36,7 @@ public class SwordNC extends ItemSword {
 		
 		if(name == "CorruptDiamondSword")
 		{
-			item.damageItem(1, player);
-			enemy.addVelocity(0, 0.5, 0);
+			enemy.addPotionEffect(new PotionEffect(Potion.moveSlowdown.id, 20*10, 5));
 		}
 		return true;
 	}
