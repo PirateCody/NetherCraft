@@ -49,7 +49,6 @@ Temporary Items
 .project
 .classpath
 /build
-*.classpath
 .settings
 /mods
 /logs
@@ -66,6 +65,4 @@ usernamecache.json
 /gradle
 /gradlew
 /gradlew.bat
-/build.gradle
-*.project
 *.dat
