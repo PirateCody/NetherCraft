@@ -36,7 +36,7 @@ public class NCArmory {
 	
 	//Corrupt Diamond Armor
 	public static ItemArmor corruptDiamondHelm = new NCArmor(CORRUPT_DIAMOND_AR, 0, "CorruptDiamondHelm");
-	public static ItemArmor corruptDiamonChestplate = new NCArmor(CORRUPT_DIAMOND_AR, 1, "CorruptDiamondChestplate");
+	public static ItemArmor corruptDiamondChestplate = new NCArmor(CORRUPT_DIAMOND_AR, 1, "CorruptDiamondChestplate");
 	public static ItemArmor corruptDiamondLeggings = new NCArmor(CORRUPT_DIAMOND_AR, 2, "CorruptDiamondLeggings");
 	public static ItemArmor corruptDiamondBoots = new NCArmor(CORRUPT_DIAMOND_AR, 3, "CorruptDiamondBoots");
 	

@@ -1,8 +1,12 @@
 package com.piratecody.nethercraft.items;
 
+import com.piratecody.nethercraft.Reference;
+import com.piratecody.nethercraft.init.NCArmory;
 import com.piratecody.nethercraft.init.NCTabs;
 
+import net.minecraft.entity.Entity;
 import net.minecraft.item.ItemArmor;
+import net.minecraft.item.ItemStack;
 
 public class NCArmor extends ItemArmor{
 
@@ -15,6 +19,28 @@ public class NCArmor extends ItemArmor{
 		super(material, 0, armorType);
 		this.setUnlocalizedName(name);
 		this.setCreativeTab(NCTabs.tabNC);
+		
+	}
+	
+	@Override
+	public  String getArmorTexture(ItemStack stack, Entity entity, int slot, String type)
+	{
+		
+		if (stack.getItem() instanceof NCArmor)
+		{
+			if(stack.getItem() == NCArmory.corruptDiamondChestplate || stack.getItem() == NCArmory.corruptDiamondHelm
+					|| stack.getItem() == NCArmory.corruptDiamondBoots)
+				return Reference.MODID + ":armor\\Cdiamond_1";
+			else if(stack.getItem() == NCArmory.corruptDiamondLeggings)
+				return Reference.MODID + ":armor\\Cdiamond_2";
+			else
+				return null;
+		}
+		else 
+			return null;
+	
+	
+			
 		
 	}
 
