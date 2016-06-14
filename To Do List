@@ -3,8 +3,10 @@ To Do List:
 1. Get Current Textures in Order
 2. Make Textures for New Items
 3. Apply Armor models/texture
-4. Crafting Recipes
-5. Nether Altar (Custom Furnace)
+4. OreDictionary Compliant
+	4.1 Make lib package with list of all names
+5. Crafting Recipes
+6. Nether Altar (Custom Furnace)
 
 
 

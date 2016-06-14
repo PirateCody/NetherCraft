@@ -22,9 +22,7 @@ public class NCArmory {
 	static ToolMaterial OBSIDIAN = EnumHelper.addToolMaterial("OBSIDIAN", 3, 1500, 3.5F, 5F, 14);
 	
 	//Armor Materials
-	static ArmorMaterial CORRUPT_IRON_AR = EnumHelper.addArmorMaterial("CORRUPT_IRON_AR", 2, new int[] {0,0,0,0}, 14);
-	static ArmorMaterial CORRUPT_DIAMOND_AR = EnumHelper.addArmorMaterial("CORRUPT_IRON_AR", 2, new int[] {0,0,0,0}, 14);
-	static ArmorMaterial OBSIDIAN_AR = EnumHelper.addArmorMaterial("CORRUPT_IRON_AR", 2, new int[] {0,0,0,0}, 14);
+	static ArmorMaterial OBSIDIAN_AR = EnumHelper.addArmorMaterial("OBSIDIAN_AR", 23, new int[] {3,6,4,3}, 14);
 	
 	/*Armour*/
 	
