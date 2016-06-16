@@ -18,8 +18,9 @@ public class NCArmor extends ItemArmor{
 	public NCArmor(ArmorMaterial material, int armorType, String name) {
 		super(material, 0, armorType);
 		this.setUnlocalizedName(name);
+		this.setTextureName(Reference.MODID + ":" + getUnlocalizedName().substring(5));
 		this.setCreativeTab(NCTabs.tabNC);
-		
+		System.out.println(Reference.MODID + ":" + getUnlocalizedName().substring(5));
 	}
 	
 	@Override
@@ -30,18 +31,23 @@ public class NCArmor extends ItemArmor{
 		{
 			if(stack.getItem() == NCArmory.corruptDiamondChestplate || stack.getItem() == NCArmory.corruptDiamondHelm
 					|| stack.getItem() == NCArmory.corruptDiamondBoots)
-				return Reference.MODID + ":armor\\Cdiamond_1";
+				return Reference.MODID + ":textures/armor/Cdiamond_1.png";
 			else if(stack.getItem() == NCArmory.corruptDiamondLeggings)
-				return Reference.MODID + ":armor\\Cdiamond_2";
+				return Reference.MODID + ":textures/armor/Cdiamond_2.png";
+			else if(stack.getItem() == NCArmory.corruptIronChestplate || stack.getItem() == NCArmory.corruptIronHelm
+					|| stack.getItem() == NCArmory.corruptIronBoots)
+				return Reference.MODID + ":textures/armor/CorruptIronArmor_1.png";
+			else if(stack.getItem() == NCArmory.corruptIronLeggings)
+				return Reference.MODID + ":textures/armor/CorruptIronArmor_2.png";
 			else
 				return null;
+			
+			
 		}
 		else 
 			return null;
-	
-	
-			
 		
 	}
+	
 
 }

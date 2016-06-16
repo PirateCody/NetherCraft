@@ -10,7 +10,7 @@ public class NCItems {
 	
 	public static Item gemCorruptDiamond = new ItemNC("CorruptDiamond");
 	public static Item ingotCorruptIron = new ItemNC("CorruptIronIngot");
-	public static Item dustObsidian = new ItemNC("ObsidanDust");
+	public static Item dustObsidian = new ItemNC("ObsidianDust");
 	public static Item ingotObsidian  = new ItemNC("ObsidianIngot");
 	
 	public static void registerItems(){

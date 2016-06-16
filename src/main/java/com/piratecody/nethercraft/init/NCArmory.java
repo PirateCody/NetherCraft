@@ -81,6 +81,16 @@ public class NCArmory {
 		RegisterHelper.registerItem(swordCorruptIron);
 		RegisterHelper.registerItem(pickaxeCorruptIron);
 		RegisterHelper.registerItem(spadeCorruptIron);
+		
+		RegisterHelper.registerItem(corruptDiamondHelm);
+		RegisterHelper.registerItem(corruptDiamondChestplate);
+		RegisterHelper.registerItem(corruptDiamondLeggings);
+		RegisterHelper.registerItem(corruptDiamondBoots);
+		
+		RegisterHelper.registerItem(corruptIronHelm);
+		RegisterHelper.registerItem(corruptIronChestplate);
+		RegisterHelper.registerItem(corruptIronLeggings);
+		RegisterHelper.registerItem(corruptIronBoots);
 
 		
 	}
