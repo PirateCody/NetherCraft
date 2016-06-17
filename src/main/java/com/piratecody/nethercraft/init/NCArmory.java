@@ -20,11 +20,13 @@ public class NCArmory {
 	static ToolMaterial CORRUPT_IRON = EnumHelper.addToolMaterial("CORRUPT_IRON", 2, 750, 2.0F, 2.0F, 14);
 	static ToolMaterial CORRUPT_DIAMOND = EnumHelper.addToolMaterial("CORRUPT_DIAMOND", 4, 1250, 4, 5F, 14);
 	static ToolMaterial OBSIDIAN = EnumHelper.addToolMaterial("OBSIDIAN", 3, 1500, 3.5F, 5F, 14);
+	static ToolMaterial EBONY = EnumHelper.addToolMaterial("EBONY", 4, 1300, 3.5F, 4.5F, 14);
 	
 	//Armor Materials
 	static ArmorMaterial CORRUPT_IRON_AR = EnumHelper.addArmorMaterial("CORRUPT_IRON_AR", 27, new int[] {2,7,4,3}, 15);
 	static ArmorMaterial CORRUPT_DIAMOND_AR = EnumHelper.addArmorMaterial("CORRUPT_DIAMOND_AR", 41, new int[] {4,9,7,4}, 20);
 	static ArmorMaterial OBSIDIAN_AR = EnumHelper.addArmorMaterial("OBSIDIAN_AR", 23, new int[] {3,6,4,3}, 14);
+	static ArmorMaterial EBONY_AR = EnumHelper.addArmorMaterial("EBONY_AR", 23, new int[] {3,6,4,3}, 14);
 	
 	/*Armour*/
 	
@@ -45,6 +47,12 @@ public class NCArmory {
 	public static ItemArmor obsidianChestplate = new NCArmor(OBSIDIAN_AR, 1, "ObsidianChestplate");
 	public static ItemArmor obsidianLeggings = new NCArmor(OBSIDIAN_AR, 2, "ObsidianLeggings");
 	public static ItemArmor obsidianBoots = new NCArmor(OBSIDIAN_AR, 3, "ObsidianBoots");
+	
+	//Ebony Armor
+	public static ItemArmor ebonyHelm = new NCArmor(EBONY_AR, 0, "EbonyHelm");
+	public static ItemArmor ebonyChestplate = new NCArmor(EBONY_AR, 1, "EbonyChestplate");
+	public static ItemArmor ebonyLeggings = new NCArmor(EBONY_AR, 2, "EbonyLeggings");
+	public static ItemArmor ebonyBoots = new NCArmor(EBONY_AR, 3, "EbonyBoots");
 	
 	
 	/* Tools */
@@ -91,6 +99,16 @@ public class NCArmory {
 		RegisterHelper.registerItem(corruptIronChestplate);
 		RegisterHelper.registerItem(corruptIronLeggings);
 		RegisterHelper.registerItem(corruptIronBoots);
+		
+		RegisterHelper.registerItem(ebonyHelm);
+		RegisterHelper.registerItem(ebonyChestplate);
+		RegisterHelper.registerItem(ebonyLeggings);
+		RegisterHelper.registerItem(ebonyBoots);
+		
+		RegisterHelper.registerItem(obsidianHelm);
+		RegisterHelper.registerItem(obsidianChestplate);
+		RegisterHelper.registerItem(obsidianLeggings);
+		RegisterHelper.registerItem(obsidianBoots);
 
 		
 	}
