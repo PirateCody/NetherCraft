@@ -12,6 +12,7 @@ public class NCItems {
 	public static Item ingotCorruptIron = new ItemNC("CorruptIronIngot");
 	public static Item dustObsidian = new ItemNC("ObsidianDust");
 	public static Item ingotObsidian  = new ItemNC("ObsidianIngot");
+	public static Item ingotEbony = new ItemNC("EbonyIngot");
 	
 	public static void registerItems(){
 		
@@ -19,6 +20,7 @@ public class NCItems {
 		RegisterHelper.registerItem(ingotCorruptIron);
 		RegisterHelper.registerItem(dustObsidian);
 		RegisterHelper.registerItem(ingotObsidian);
+		RegisterHelper.registerItem(ingotEbony);
 		
 	}
 
