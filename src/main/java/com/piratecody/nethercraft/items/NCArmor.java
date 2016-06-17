@@ -39,6 +39,16 @@ public class NCArmor extends ItemArmor{
 				return Reference.MODID + ":textures/armor/CorruptIronArmor_1.png";
 			else if(stack.getItem() == NCArmory.corruptIronLeggings)
 				return Reference.MODID + ":textures/armor/CorruptIronArmor_2.png";
+			else if(stack.getItem() == NCArmory.obsidianHelm || stack.getItem() == NCArmory.obsidianChestplate
+					|| stack.getItem() == NCArmory.obsidianBoots)
+				return Reference.MODID + ":textures/armor/obsidian_layer_1.png";
+			else if(stack.getItem() == NCArmory.obsidianLeggings)
+				return Reference.MODID + ":textures/armor/obsidian_layer_2.png";
+			else if(stack.getItem() == NCArmory.ebonyHelm || stack.getItem() == NCArmory.ebonyChestplate
+					|| stack.getItem() == NCArmory.ebonyBoots)
+				return Reference.MODID + ":textures/armor/ebony_layer_1.png";
+			else if(stack.getItem() == NCArmory.ebonyLeggings)
+				return Reference.MODID + ":textures/armor/ebony_layer_2.png";
 			else
 				return null;
 			
