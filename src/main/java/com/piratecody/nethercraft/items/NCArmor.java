@@ -20,7 +20,7 @@ public class NCArmor extends ItemArmor{
 		this.setUnlocalizedName(name);
 		this.setTextureName(Reference.MODID + ":" + getUnlocalizedName().substring(5));
 		this.setCreativeTab(NCTabs.tabNC);
-		System.out.println(Reference.MODID + ":" + getUnlocalizedName().substring(5));
+		//System.out.println(Reference.MODID + ":" + getUnlocalizedName().substring(5));
 	}
 	
 	@Override
