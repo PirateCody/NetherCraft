@@ -12,14 +12,10 @@ public class Recipes {
 	public static void addShapedRecipes()
 	{
 		//Blocks
-		GameRegistry.addShapedRecipe(new ItemStack(Blocks.obsidian), new Object[]
-				{"AAA", "AAA", "AAA", 'A', NCItems.ingotObsidian});
-		GameRegistry.addShapedRecipe(new ItemStack(NCBlocks.blockCorruptDiamond), new Object[]
-				{"AAA", "AAA", "AAA", 'A', NCItems.gemCorruptDiamond});
-		GameRegistry.addShapedRecipe(new ItemStack(NCBlocks.blockCorruptIron), new Object[]
-				{"AAA", "AAA", "AAA", 'A', NCItems.ingotCorruptIron});
-		GameRegistry.addShapedRecipe(new ItemStack(NCBlocks.blockEbony), new Object[]
-				{"AAA", "AAA", "AAA", 'A', NCItems.ingotEbony});
+		RecipeHelper.createBlockCrafting(Blocks.obsidian, NCItems.ingotObsidian);
+		RecipeHelper.createBlockCrafting(NCBlocks.blockCorruptDiamond, NCItems.gemCorruptDiamond);
+		RecipeHelper.createBlockCrafting(NCBlocks.blockCorruptIron, NCItems.ingotCorruptIron);
+		RecipeHelper.createBlockCrafting(NCBlocks.blockEbony, NCItems.ingotEbony);
 		
 		//Armors
 		RecipeHelper.createNewArmorCrafting(NCItems.ingotObsidian, NCArmory.obsidianHelm, 
