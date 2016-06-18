@@ -1,0 +1,56 @@
+tile.CorruptIronOre.name=Corrupt Iron Ore
+tile.CorruptDiamondOre.name=Corrupt Diamond Ore
+tile.ObsidianOre.name=Obsidian Ore
+tile.EbonyOre.name=Ebony Ore
+tile.CorruptObsidianOre.name=Corrupt Obsidian Ore
+tile.CorruptIronBlock.name=Corrupt Iron Block
+tile.CorruptDiamondBlock.name=Corrupt Diamond Block
+tile.EbonyBlock.name=Ebony Block
+tile.CorruptEbonyOre.name=Corrupt Ebony Ore
+
+item.CorruptDiamond.name=Corrupt Diamond
+item.CorruptIronIngot.name=Corrupt Iron Ingot
+item.ObsidianDust.name=Obsidian Dust
+item.ObsidianIngot.name=Obsidian Ingot
+item.EbonyIngot.name=Ebony Ingot
+
+item.CorruptIronHelm.name=Corrupt Iron Helmet
+item.CorruptIronChestplate.name=Corrupt Iron Chestplate
+item.CorruptIronBoots.name=Corrupt Iron Boots
+item.CorruptIronLeggings.name=Corrupt Iron Leggings
+
+item.CorruptDiamondHelm.name=Corrupt Diamond Helmet
+item.CorruptDiamondChestplate.name=Corrupt Diamond Chestplate
+item.CorruptDiamondLeggings.name=Corrupt Diamond Leggings
+item.CorruptDiamondBoots.name=Corrupt Diamond Boots
+
+item.ObsidianHelm.name=Obsidian Helmet
+item.ObsidianChestplate.name=Obsidian Chestplate
+item.ObsidianLeggings.name=Obsidian Leggings
+item.ObsidianBoots.name=Obsidian Boots 
+
+item.EbonyHelm.name=Ebony Helmet
+item.EbonyChestplate.name=Ebony Chestplate
+item.EbonyLeggings.name=Ebony Leggings
+item.EbonyBoots.name=Ebony Boots
+
+item.CorruptIronSword.name=Corrupt Iron Sword
+item.CorruptDiamondSword.name=Corrupt Diamond Sword
+item.ObsidianSword.name=Obsidian Sword
+
+item.CorruptIronPick.name=Corrupt Iron Pickaxe
+item.CorruptDiamondPick.name=Corrupt Diamond Pickaxe
+item.ObsidianPick.name=Obsidian Pickaxe
+
+item.CorruptIronAxe.name=Corrupt Iron Axe
+item.CorruptDiamondAxe.name=Corrupt Diamond Axe
+item.ObsidianAxe.name=Obsidian Axe
+
+item.CorruptIronShovel.name=Corrupt Iron Spade
+item.CorruptDiamondShovel.name=Corrupt Diamond Spade
+item.ObsidianShovel.name=Obsidian Spade
+
+itemGroup.tabNC=NetherCraft Items
+
+
+
