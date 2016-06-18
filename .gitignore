@@ -66,3 +66,4 @@ usernamecache.json
 /gradlew
 /gradlew.bat
 *.dat
+*.log
