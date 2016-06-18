@@ -35,9 +35,11 @@ public class NCWorldGeneration implements IWorldGenerator{
 
 		private void generateNether(World world, Random random, int x, int z)
 		{
-			addOreSpawn(NCBlocks.oreCorruptIron, world, random, x, z, 16, 16, 1 + random.nextInt(3), 80, 0, 120, Blocks.netherrack);
-			addOreSpawn(NCBlocks.oreCorruptDiamond, world, random, x, z, 16, 16, 1 + random.nextInt(2), 75, 0, 120, Blocks.netherrack);
-			addOreSpawn(NCBlocks.oreObsidian, world, random, x, z, 16, 16, 1, 50, 50, 120, Blocks.netherrack);
+			addOreSpawn(NCBlocks.oreCorruptIron, world, random, x, z, 16, 16, 2 + random.nextInt(3), 80, 5, 120, Blocks.netherrack);
+			addOreSpawn(NCBlocks.oreCorruptDiamond, world, random, x, z, 16, 16, 1 + random.nextInt(2), 50, 5, 120, Blocks.netherrack);
+			addOreSpawn(NCBlocks.oreCorruptObsidian, world, random, x, z, 16, 16, 3+ random.nextInt(2), 75, 5, 120, Blocks.netherrack);
+			addOreSpawn(NCBlocks.oreCorruptEbony, world, random, x, z, 16, 16, 3+ random.nextInt(2), 60, 5, 120, Blocks.netherrack);
+
 		}
 
 		private void generateEnd(World world, Random random, int x, int z)
