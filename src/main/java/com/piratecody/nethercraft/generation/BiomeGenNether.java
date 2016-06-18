@@ -18,15 +18,17 @@ public class BiomeGenNether extends BiomeGenBase{
 	public BiomeGenNether(int par1)
 	{
 	super(par1);
-	this.blockMaterial = Material.water;
+	this.blockMaterial = Material.lava;
 	this.rootHeight = 0.1F;
 	this.heightVariation = 0.6F;
 	this.spawnableMonsterList.clear();
 	this.spawnableCreatureList.clear();
 	this.topBlock = Blocks.netherrack;
 	this.fillerBlock = Blocks.netherrack;
-	this.setBiomeName("Tutorial");
+	this.setBiomeName("Nether");
 	this.setColor(16711680);
+	this.setTemperatureRainfall(2.0F, 0.0F);
+	this.setDisableRain();
 	
 	this.spawnableMonsterList.add(new BiomeGenBase.SpawnListEntry(EntityGhast.class, 50, 4, 4));
     this.spawnableMonsterList.add(new BiomeGenBase.SpawnListEntry(EntityPigZombie.class, 100, 4, 4));

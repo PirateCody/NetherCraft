@@ -32,7 +32,7 @@ public class Nethercraft {
 	public static Nethercraft instance;
 	
 	NCWorldGeneration eventWorldGen = new NCWorldGeneration();
-	//public static BiomeGenBase NetherBiome = new BiomeGenNether(10).setBiomeName("Nether");
+	public static BiomeGenBase NetherBiome = new BiomeGenNether(1).setBiomeName("Nether").func_76733_a(123).func_150563_c(16777215);
 	
 	//inits
 	@Mod.EventHandler
@@ -43,7 +43,7 @@ public class Nethercraft {
 		NCItems.registerItems();
 		NCArmory.registerArmory();
 		GameRegistry.registerWorldGenerator(eventWorldGen, 0);
-		//BiomeManager.addSpawnBiome(NetherBiome);
+		BiomeManager.addSpawnBiome(NetherBiome);
 		
 
 	}
