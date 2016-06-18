@@ -5,6 +5,7 @@ import net.minecraft.world.biome.BiomeGenBase;
 import net.minecraftforge.common.BiomeManager;
 
 import com.piratecody.nethercraft.generation.BiomeGenNether;
+import com.piratecody.nethercraft.generation.BiomeGenNetherEdge;
 import com.piratecody.nethercraft.generation.NCWorldGeneration;
 import com.piratecody.nethercraft.init.NCArmory;
 import com.piratecody.nethercraft.init.NCBlocks;
@@ -32,7 +33,8 @@ public class Nethercraft {
 	public static Nethercraft instance;
 	
 	NCWorldGeneration eventWorldGen = new NCWorldGeneration();
-	public static BiomeGenBase NetherBiome = new BiomeGenNether(1).setBiomeName("Nether").func_76733_a(123).func_150563_c(16777215);
+	public static BiomeGenBase NetherBiome = new BiomeGenNether(1).setBiomeName("Nether");
+	public static BiomeGenBase NetherEdgeBiome = new BiomeGenNetherEdge(2);
 	
 	//inits
 	@Mod.EventHandler
@@ -44,6 +46,7 @@ public class Nethercraft {
 		NCArmory.registerArmory();
 		GameRegistry.registerWorldGenerator(eventWorldGen, 0);
 		BiomeManager.addSpawnBiome(NetherBiome);
+		BiomeManager.addSpawnBiome(NetherEdgeBiome);
 		
 
 	}

@@ -19,10 +19,10 @@ public class BiomeGenNether extends BiomeGenBase{
 	{
 	super(par1);
 	this.blockMaterial = Material.lava;
-	this.rootHeight = 0.1F;
-	this.heightVariation = 0.6F;
+	this.setHeight(height_LowPlains);
 	this.spawnableMonsterList.clear();
 	this.spawnableCreatureList.clear();
+	this.spawnableWaterCreatureList.clear();
 	this.topBlock = Blocks.netherrack;
 	this.fillerBlock = Blocks.netherrack;
 	this.setBiomeName("Nether");
