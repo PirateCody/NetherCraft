@@ -3,6 +3,8 @@ package com.piratecody.nethercraft;
 
 import net.minecraft.world.biome.BiomeGenBase;
 import net.minecraftforge.common.BiomeManager;
+import net.minecraftforge.common.BiomeManager.BiomeEntry;
+import net.minecraftforge.common.BiomeManager.BiomeType;
 
 import com.piratecody.nethercraft.generation.BiomeGenNether;
 import com.piratecody.nethercraft.generation.BiomeGenNetherEdge;
@@ -33,9 +35,10 @@ public class Nethercraft {
 	public static Nethercraft instance;
 	
 	NCWorldGeneration eventWorldGen = new NCWorldGeneration();
-	public static BiomeGenBase NetherBiome = new BiomeGenNether(1).setBiomeName("Nether");
-	public static BiomeGenBase NetherEdgeBiome = new BiomeGenNetherEdge(2);
-	
+	public static BiomeGenBase NetherBiome = new BiomeGenNether(60).setBiomeName("Nether");
+	public static BiomeGenBase NetherEdgeBiome = new BiomeGenNetherEdge(61);
+	//public static BiomeGenBase LavaRiver = new BiomeGenLavaRiver(62).setBiomeName("Lava River");
+	//Seed: -1139501490318387308
 	//inits
 	@Mod.EventHandler
 	public void preInit(FMLPreInitializationEvent event)
@@ -45,8 +48,14 @@ public class Nethercraft {
 		NCItems.registerItems();
 		NCArmory.registerArmory();
 		GameRegistry.registerWorldGenerator(eventWorldGen, 0);
+		
+		BiomeManager.addBiome(BiomeType.WARM, new BiomeEntry(NetherBiome, 50));
+		BiomeManager.addBiome(BiomeType.WARM, new BiomeEntry(NetherEdgeBiome, 50));
+		//BiomeManager.addBiome(BiomeType.WARM, new BiomeEntry(LavaRiver, 50));
+		
 		BiomeManager.addSpawnBiome(NetherBiome);
 		BiomeManager.addSpawnBiome(NetherEdgeBiome);
+		//BiomeManager.addSpawnBiome(LavaRiver);
 		
 
 	}

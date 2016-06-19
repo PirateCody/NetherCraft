@@ -5,7 +5,7 @@ public class BiomeGenNetherEdge extends BiomeGenNether {
 	public BiomeGenNetherEdge(int par1) {
 		super(par1);
 		this.setHeight(height_HighPlateaus);
-		this.setBiomeName("Nether Edge");
+		this.setBiomeName("Nether Mesa");
 		this.setTemperatureRainfall(1.9F, 0F);
 	}
 
